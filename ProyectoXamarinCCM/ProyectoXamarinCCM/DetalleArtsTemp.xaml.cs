@@ -1,28 +1,23 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 using ProyectoXamarinCCM.Modelos;
+using ProyectoXamarinCCM.Servicios;
+using Xamarin.Forms;
 
 namespace ProyectoXamarinCCM
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class DetalleArts : ContentPage
-	{
-		public DetalleArts ()
-		{
-			InitializeComponent ();
-		}
+    public partial class DetalleArtsTemp : ContentPage
+    {
+        public DetalleArtsTemp()
+        {
+            InitializeComponent();
+        }
 
-        public DetalleArts(Articulo articulo)
+        public DetalleArtsTemp(ArticuloCCM producto)
         {
             // 1) BindingContext alimenta la pantalla
 
-            BindingContext = articulo;
+            BindingContext = producto;
 
             //
             InitializeComponent();
