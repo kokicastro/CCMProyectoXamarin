@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 //using ProyectoXamarinCCM.Modelos;
+
 using ProyectoXamarinCCM.Servicios;
 using Plugin.Connectivity;
 using ProyectoXamarinCCM.Modelos;
